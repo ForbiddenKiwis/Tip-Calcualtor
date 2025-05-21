@@ -1,35 +1,75 @@
-# 💰 Tip Calculator App
+# 📱 Tip Calculator App
 
-A simple and elegant **Tip Calculator** built using **Jetpack Compose** in Android Studio. This app allows users to input a bill amount and calculates a 15% tip instantly.
+A simple Android app built using **Jetpack Compose** that calculates the tip based on the bill amount and service percentage. The user can optionally choose to round up the tip.
 
-## ✨ Features
+---
 
-- Input the bill amount.
-- Automatic 15% tip calculation.
-- Input field supports only numeric values.
-- Clean, scrollable UI with padding for safe areas.
-- Responsive design preview enabled with system UI.
+## 🛠 Features
 
-## 🛠 Tech Stack
+- Input the **bill amount** and **tip percentage**
+- Toggle to **round up** the tip
+- Live calculation and formatted currency display
+- Clean and modern UI using **Material 3**
+- Icon-enhanced input fields with `leadingIcon`
 
-- **Language:** Kotlin
-- **Framework:** Jetpack Compose
-- **UI Toolkit:** Material3
-- **Tools:** Android Studio, Compose Preview
+---
 
-## 📱 Screenshots
+## 🧰 Tech Stack
 
-> _Add your screenshots here if needed_
+- **Kotlin**
+- **Jetpack Compose**
+- **Material 3**
+- **Android Studio Koala Feature Drop**
+- **Composable functions**
+- **State management** using `remember` and `mutableStateOf`
 
-## 🧠 Code Structure
+---
 
-- `MainActivity.kt`: Main entry point that sets the content view.
-- `TipTimeLayout()`: Main composable displaying input and result.
-- `EditNumberField()`: TextField for numeric input with keyboard type set to `Number`.
-- `calculateTip()`: Business logic for calculating the tip using `NumberFormat`.
+## 🚀 How to Run
 
-## 📦 How to Run
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/your-username/tip-calculator-compose.git
+    cd tip-calculator-compose
+    ```
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/tip-calculator.git
+2. **Open the project in Android Studio**
+
+3. Make sure your **emulator** or **physical device** is connected
+
+4. **Run the app**
+    - Click the ▶️ `Run` button in Android Studio
+    - Or use the terminal:
+        ```bash
+        ./gradlew installDebug
+        ```
+
+---
+
+## 📁 File Structure
+
+com.example.tipcalculator/
+├── MainActivity.kt
+├── ui.theme/ # Contains your custom theme
+├── res/
+│ ├── drawable/ # money.png, percent.png
+│ ├── values/ # strings.xml, themes.xml
+
+yaml
+Copy
+Edit
+
+---
+
+## 🔧 TODOs / Enhancements
+
+- [ ] Add dark mode support
+- [ ] Support for multiple currencies
+- [ ] Add unit tests
+- [ ] Improve UX for edge-case inputs
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE)
